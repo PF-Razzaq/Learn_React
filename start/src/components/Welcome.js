@@ -2,7 +2,8 @@ import React, {Component} from 'react'
 
 class Welcome extends Component{
     render(){
-        return <h1>Name: {this.props.Name}</h1>
+        const {name,heroName} = this.props
+        return <h1>FirstName: {name} -- LastName: {heroName}</h1>
     }
 }
 

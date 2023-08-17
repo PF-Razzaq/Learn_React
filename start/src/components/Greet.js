@@ -1,5 +1,7 @@
 import React from "react";
 
-export const MyCom = props => <h1>My Name is {props.Name} and SurName is {props.SurName}</h1>
-
-// export default Greet
+const MyCom = props => {
+ const {name,heroName} =props
+return   <h1>My Name is {name} and SurName is {heroName}</h1>
+}
+export default MyCom
