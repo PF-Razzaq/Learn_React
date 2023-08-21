@@ -24,12 +24,19 @@ import ParentComp from "./components/ParentComp";
 import RefsDemo from "./components/RefsDemo";
 import FocusInput from "./components/FocusInput";
 import FRinputfocus from "./components/FRinputfocus";
+import PortalDemo from "./components/PortalDemo";
+import Hero from "./components/Hero";
+import ErrorBoundry from "./components/ErrorBoundry";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <FRinputfocus />
+        <ErrorBoundry>
+          <Hero heroName="Batman" />
+          <Hero heroName="SuperName" />
+          <Hero heroName="Joker" />
+        </ErrorBoundry>
       </div>
     );
   }
