@@ -19,13 +19,17 @@ import Form from "./components/form";
 import LifeCycleA from "./components/LifeCycleA";
 import FragmentDemo from "./components/FragmentDemo";
 import Table from "./components/Table";
+import Column from "./components/Column";
+import ParentComp from "./components/ParentComp";
+import RefsDemo from "./components/RefsDemo";
+import FocusInput from "./components/FocusInput";
+import FRinputfocus from "./components/FRinputfocus";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <FragmentDemo />
-        <Table />
+        <FRinputfocus />
       </div>
     );
   }

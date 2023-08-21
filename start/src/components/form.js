@@ -10,7 +10,6 @@ class Form extends Component {
       topic: "React",
     };
   }
-
   handleUsername = (event) => {
     this.setState({
       username: event.target.value,
@@ -42,11 +41,7 @@ class Form extends Component {
       <form onSubmit={this.formSubmit}>
         <div>
           <label htmlFor="">Name:</label>
-          <input
-            type="text"
-            value={this.state.username}
-            onChange={this.handleUsername}
-          />
+          <input type="text" value={username} onChange={this.handleUsername} />
         </div>
         <div>
           <label htmlFor="">Commetns:</label>
@@ -56,17 +51,12 @@ class Form extends Component {
             id=""
             cols="25"
             rows="10"
-            value={this.state.comments}
+            value={comments}
           ></textarea>
         </div>
         <div>
           <label htmlFor="">Topic: </label>
-          <select
-            name=""
-            id=""
-            value={this.state.topic}
-            onChange={this.selectTopic}
-          >
+          <select name="" id="" value={topic} onChange={this.selectTopic}>
             <option value="react">React</option>
             <option value="vue">Vue</option>
             <option value="angular">Angular</option>

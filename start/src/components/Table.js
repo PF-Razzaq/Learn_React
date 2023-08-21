@@ -3,13 +3,13 @@ import Column from "./Column";
 
 function Table() {
   return (
-    <Table>
-      <tbody>
-        <tr>
+    <React.Fragment>
+      <table>
+        <tbody>
           <Column />
-        </tr>
-      </tbody>
-    </Table>
+        </tbody>
+      </table>
+    </React.Fragment>
   );
 }
 

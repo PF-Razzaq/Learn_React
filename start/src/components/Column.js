@@ -2,10 +2,10 @@ import React from "react";
 
 function Column() {
   return (
-    <div>
+    <tr>
       <td>Abdul </td>
       <td>Razzaq</td>
-    </div>
+    </tr>
   );
 }
 
