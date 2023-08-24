@@ -34,13 +34,14 @@ import ClickCounterTwo from "./components/ClickCounterTwo";
 import ClickHoveredTwo from "./components/ClickHoveredTwo";
 import { UserProvider } from "./components/userContext";
 import ComponentC from "./components/ComponentC";
+import MemoComp from "./components/MemoComp";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <UserProvider value="Abdul Razzaq">
-          <ComponentC />
+        <UserProvider value="Abdullah">
+          <ComponentC value="" />
         </UserProvider>
       </div>
     );

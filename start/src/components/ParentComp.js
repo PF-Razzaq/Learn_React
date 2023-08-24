@@ -3,7 +3,7 @@ import PureComp from "./PureComp";
 import RegularComp from "./RegularComp";
 import MemoComp from "./MemoComp";
 
-export class ParentComp extends Component {
+class ParentComp extends Component {
   constructor(props) {
     super(props);
 
@@ -25,9 +25,9 @@ export class ParentComp extends Component {
     return (
       <div>
         Parent Component
-        <MemoComp name={this.state.name} />
-        {/* <PureComp name={this.state.name} />
-        <RegularComp name={this.state.name} /> */}
+        {/* <MemoComp name={this.state.name} /> */}
+        <PureComp />
+        <RegularComp />
       </div>
     );
   }
