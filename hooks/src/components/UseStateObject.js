@@ -14,6 +14,7 @@ const UseStateObject = () => {
     <div>
       <h2>
         Name: {myObj.name} and Age {myObj.age} and Degree {myObj.degree}
+        <button>Remove</button>
       </h2>
       <button onClick={changeObject}>Update</button>
     </div>

@@ -25,11 +25,18 @@ const UseStateArray = () => {
 
   const [myArray, setMyArray] = useState(myBioData);
 
+  const removeRecord = (id) => {
+    const newArray = myArray.filter((curEle) => {
+      return curEle.id !== id;
+    });
+    setMyArray(newArray);
+  };
   return (
     <>
       {myArray.map((curEle) => (
         <h4 key={curEle.id}>
-          Id: ; {curEle.id} Name: {curEle.Name} ; and Age: {curEle.age}
+          Id: {curEle.id} ; Name: {curEle.Name} ; and Age: {curEle.age}
+          <button onClick={() => removeRecord(curEle.id)}>Remove</button>
         </h4>
       ))}
       <button onClick={btnClear}>Clear</button>
