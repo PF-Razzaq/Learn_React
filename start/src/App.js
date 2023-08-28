@@ -40,9 +40,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <UserProvider value="Abdullah">
-          <ComponentC value="" />
-        </UserProvider>
+        <FRinputfocus />
       </div>
     );
   }
