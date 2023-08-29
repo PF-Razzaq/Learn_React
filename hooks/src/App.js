@@ -6,11 +6,12 @@ import UseStateObject from "./components/UseStateObject";
 import LoginForm from "./components/LoginForm";
 import UseEffect1 from "./components/UseEffect1";
 import UseEffect2 from "./components/UseEffect2";
+import UseEffectApi from "./components/UseEffectApi";
 
 function App() {
   return (
     <div className="App">
-      <UseEffect2 />
+      <UseEffectApi />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 body {
@@ -45,4 +45,12 @@ body {
 button {
   padding: 10px;
   font-weight: bold;
+} */
+
+body {
+  background-color: #acdffb;
+}
+span.textLeft {
+  font-size: 20px;
+  color: rgb(117, 106, 106);
 }
