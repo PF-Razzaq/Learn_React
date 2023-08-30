@@ -54,3 +54,7 @@ span.textLeft {
   font-size: 20px;
   color: rgb(117, 106, 106);
 }
+
+.heading {
+  margin-top: -5rem;
+}
