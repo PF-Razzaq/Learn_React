@@ -6,7 +6,26 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3rem;
+  font-size: 25px;
+  font-weight: bold;
+}
+.navbarlink:hover {
+  color: red;
+}
+ul .active {
+  color: #61dafb;
+}
+ul li {
+  margin: 10px;
+  list-style-type: none;
+}
+ul li .navbarlink {
+  text-decoration: none;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
