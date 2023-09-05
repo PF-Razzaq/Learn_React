@@ -15,6 +15,7 @@ import Protected from "./components/Protected";
 import { Profiler } from "react";
 import MyComponent from "./components/MyComponent";
 import MyProfilerComponent from "./components/MyComponent";
+import PortalDemo from "./components/PortalDemo";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter> */}
-      <MyProfilerComponent />
+      <PortalDemo />
     </div>
   );
 }
